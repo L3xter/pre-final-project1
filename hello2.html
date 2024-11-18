@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello, Human</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: url('22.gif') no-repeat center center fixed;
+            background-size: cover;
+            color: #ffffff;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container {
+            background: url('122.gif') no-repeat center center;
+            background-size: cover;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+            text-align: center;
+            max-width: 400px;
+            width: 100%;
+        }
+        h1 {
+            font-size: 3.5rem;
+            text-transform: uppercase;
+            background: linear-gradient(120deg, #ff007f, #6a11cb);
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+        .btn {
+            padding: 15px 30px;
+            background-color: #ffffff;
+            color: #6a11cb;
+            border-radius: 50px;
+            font-size: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+        }
+        .btn:hover {
+            background-color: #6a11cb;
+            color: white;
+            box-shadow: 0 5px 15px rgba(106, 17, 203, 0.3);
+        }
+        .additional-text {
+            margin-top: 10px;
+            font-size: 1rem;
+            color: #f0f0f0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Hello Human</h1>
+        <button class="btn" onclick="navigateToPage()">Click Here</button>
+        <p class="additional-text"></p>
+    </div>
+
+    <script>
+        function navigateToPage() {
+            window.location.href = "hello-world.html"; // Redirect to the second page
+        }
+    </script>
+</body>
+</html>
